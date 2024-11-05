@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+button{
+    background-color: black;
+    color: azure;
+    padding: 1rem;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-pupup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.container-pupup.active{
+    display: flex;
+}
+
+.pupup{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px green;
+    padding: 2rem;
+    position: relative;
+    width: 500px;
+}
+
+.pupup button {
+    background-color: black;
+    color: blueviolet;
+    font-size: 2,5rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
